@@ -1,0 +1,108 @@
+.contact {
+    background-image: url('../assets/bg_pattern.png');
+    background-repeat: repeat;
+    background-size: 50%;
+}
+
+.container .web__title {
+    display: none;
+}
+
+.container .mobile__title {
+    margin: 28px 0px 32px 0px;
+}
+
+.map__wrapper {
+    max-width: 1080px;
+}
+
+.map__wrapper iframe {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.contact .contact__detail {
+    padding: 0px 6%;
+}
+
+.contact__detail table {
+    max-width: 100%;
+    margin-top: 24px;
+    border-radius: 6px;
+
+    border-style: hidden; /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 1px #454545; /* this draws the table border  */
+}
+
+table, tr, td {
+    border: 1px solid #454545;
+    border-collapse: collapse;
+    padding: 6px 12px;
+}
+
+table tr td p {
+    margin: 0 !important;
+}
+
+td {
+    vertical-align: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.section__title {
+    margin-bottom: 52px;
+}
+  
+/* Rendered on Desktop Web */
+@media only screen and (min-width: 800px) {
+    .contact {
+        padding: 0 10%;
+        background-size: 18%;
+    }
+    
+    .contact .container {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 100px 0px 0px 0px !important;
+    }
+
+    .container .web__title {
+        display: block;
+        text-align: center !important;
+    }
+
+    .container .mobile__title {
+        display: none;
+    }
+    
+    .container .maps__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .map__wrapper {
+        width: 50%;
+        border: 2px solid #ff9934;
+        border-radius: 12px !important;
+    }
+    
+    .map__wrapper iframe {
+        max-width: 100%;
+        aspect-ratio: 4/3;
+        border-radius: 12px !important;
+    }
+
+    .contact .contact__detail {
+        padding: 0px 0px 0px 36px;
+    }
+
+    .contact__detail table {
+        margin-top: 0;
+    }
+
+    .section__title {
+        margin-bottom: 75px;
+    }
+}

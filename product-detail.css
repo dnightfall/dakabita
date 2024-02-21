@@ -1,0 +1,219 @@
+/* .product__detail .container { */
+    /* padding: 8% 6% 100px 6% */
+/* } */
+.product__detail {
+    background-image: url('../assets/bg_pattern.png');
+    background-repeat: repeat;
+    background-size: 50%;
+}
+
+.category__links__d1 {
+    text-align: left;
+    margin: 18px auto 52px auto;
+}
+
+.category__links__d1 a {
+    font-size: 14px;
+    color: #454545 !important;
+    padding-bottom: 2px;
+    margin: 0px 4px;
+    cursor: pointer;
+    transition: all 0.1s ease 0s;
+}
+
+.category__links__d1 a:hover,
+.category__links__d1 .activated {
+    color: #ffac58 !important;
+    border-bottom: 1.5px solid #ffac58;
+}
+
+.detail__image .image__wrapper .anchor {
+    /* aspect-ratio: 3/2; */
+    object-fit: cover;
+    max-width: 100%;
+    /* border-radius: 8px; */
+    margin-bottom: 12px;
+}
+
+.image__wrapper .image__wrapper__child {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0px 6%;
+}
+
+.image__wrapper__child img {
+    max-width: 31%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.image__wrapper__child img:hover {
+    border: 2px solid #ffac58;
+}
+
+.action__container {
+    /* display: flex; */
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    padding: 10px 6%;
+    border-top: 1px solid #EFEFEF;
+    background-color: #FFFFFF;
+}
+
+.action__container .buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.individual__description {
+    padding: 6px 6% 100px 6%;
+}
+
+.individual__description h2 {
+    margin: 16px 0px 8px 0px;
+}
+
+.individual__description p {
+    margin-bottom: 12px;
+    /* text-align: justify; */
+}
+
+.individual__description .tag {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.individual__description .tag__item {
+    width: fit-content;
+    /* background-color: #ff9934; */
+    background-color: #F3F3F3;
+    padding: 6px 14px;
+    border-radius: 24px;
+}
+
+.individual__description .tag__item:hover {
+    cursor: pointer;
+    padding: 4px 12px;
+    border: 2px solid #ffac58;
+}
+
+.tag__item:nth-child(even) {
+    margin: 0px 10px;
+}
+
+.tag__item p {
+    /* color: #FFFFFF; */
+    color: #333333;
+    margin: 0;
+}
+
+.individual__description table {
+    max-width: 100%;
+    margin-top: 24px;
+    border-radius: 6px;
+
+    border-style: hidden; /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 1px #454545; /* this draws the table border  */
+}
+
+table, tr, td {
+    border: 1px solid #454545;
+    border-collapse: collapse;
+    padding: 6px 12px;
+}
+
+td {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+table tr td p {
+    margin: 0 !important;
+}
+
+td {
+    vertical-align: center;
+}
+
+/* tr:nth-child(even) {
+    background-color: #D6EEEE;
+} */
+
+/* Hiding footer on Mobile Devices */
+footer {
+    display: none;
+}
+  
+/* Rendered on Desktop Web */
+@media only screen and (min-width: 800px) {
+    .product__detail {
+        padding: 0 10%;
+        background-size: 18%;
+    }
+    
+    .product__detail .container {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 60px 0px 120px 0px !important;
+    }
+
+    .detail__image {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* max-width: 1080px;
+        margin: 0 auto; */
+    }
+
+    .detail__image .image__wrapper {
+        max-width: 45%;
+    }
+
+    .image__wrapper .anchor {
+        /* border-radius: 6px; */
+        border-radius: 8px;
+    }
+    
+    .image__wrapper .image__wrapper__child {
+        padding: 0;
+        border-radius: 8px;
+    }
+
+    .individual__description {
+        padding: 0px 0px 0px 36px;
+    }
+
+    .individual__description h2 {
+        margin-top: 0;
+    }
+
+    .individual__description .tag .tag__item {
+        padding: 6px 18px;
+    }
+
+    .individual__description .tag .tag__item:hover {
+        padding: 4px 16px;
+        border: 2px solid #ffac58;
+    }
+
+    .individual__description table {
+        border-radius: 8px;
+    }
+
+    .buy {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+}
+
+#nama_produk {
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
